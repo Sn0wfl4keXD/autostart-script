@@ -1,6 +1,8 @@
 #! /bin/bash
 
+#Autorun dir
 SCRIPT_DIR=/etc/init.d/
+
 SCRIPT=$1
 CASE=$2
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
