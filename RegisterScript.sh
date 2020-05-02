@@ -6,13 +6,13 @@ CASE=$2
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
 FILE=$DIR"/"$SCRIPT
 
-#puts the script in autorun
+#puts the script in int.d
 function copy() {
         echo "Stored file $SCRIPT in $SCRIPT_DIR "
         sudo cp $FILE $SCRIPT_DIR 
 }
 
-#Delets the script
+#Delets the script from int.d
 function delete(){
 	echo "Deleting $SCRIPT in $SCRIPT_DIR"
 	sudo rm $SCRIPT_DIR$SCRIPT 
