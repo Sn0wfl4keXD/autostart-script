@@ -13,7 +13,7 @@ function copy() {
         echo "Stored file $SCRIPT in $SCRIPT_DIR "
         sudo cp $FILE $SCRIPT_DIR 
 	sudo chmod +x $SCRIPT_DIR$SCRIPT 
-	sudo update-rc.d $SCRIPT_DIR$SCRIPT defaults
+	sudo update-rc.d $SCRIPT defaults
 }
 
 #Delets the script from int.d
